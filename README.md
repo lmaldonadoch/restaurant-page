@@ -47,9 +47,9 @@ cd /restaurant-page/
 
 Open `index.html` in your web browser
 
-## Demo
+## Live Version
 
-[Hosted on Githack ](https://rawcdn.githack.com/idgm5/tic-tac-toe-js/9e42a93790285e11e085635651aa2e6c01e46ada/index.html)
+[Hosted on Githack](https://rawcdn.githack.com/lmaldonadoch/restaurant-page/07ba120023706cbc9da0ca70df5e110aab27d251/dist/index.html)
 
 ## Authors
 
