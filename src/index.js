@@ -1,15 +1,19 @@
 import _ from 'lodash';
-import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
 import Home from './pages/home';
 import Menu from './pages/menu';
 import Contact from './pages/contact';
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
 
 function render() {
   const content = document.getElementById('content');
 
   const nav = document.createElement('ul');
-  nav.classList.add('nav', 'nav-pills', 'bg-success');
+  nav.classList.add('nav', 'nav-pills', 'bg-success', 'w-100');
 
   const li1 = document.createElement('li');
   const li2 = document.createElement('li');
@@ -35,6 +39,9 @@ function render() {
     link.classList.add('nav-link', 'text-light');
   });
   link1.classList.add('active');
+  link1.setAttribute('id', 'home');
+  link2.setAttribute('id', 'menu');
+  link3.setAttribute('id', 'contact');
 
   li1.appendChild(link1);
   li2.appendChild(link2);
@@ -43,7 +50,50 @@ function render() {
   nav.append(li1, li2, li3);
   content.appendChild(nav);
 
-  document.getElementById('content').appendChild(nav);
+  const imageDiv = document.createElement('div');
+  imageDiv.classList.add(
+    'd-flex',
+    'w-100',
+    'justify-content-center',
+    'logo-container',
+    'my-3'
+  );
+  content.appendChild(imageDiv);
+
+  const footer = document.createElement('footer');
+  footer.classList.add('w-100', 'd-flex', 'bg-success');
+
+  const imageDivFooter = document.createElement('div');
+  imageDivFooter.classList.add(
+    'd-flex',
+    'w-100',
+    'justify-content-center',
+    'logo-container',
+    'my-3'
+  );
+  footer.appendChild(imageDivFooter);
+
+  const disclaimer = document.createElement('p');
+  disclaimer.classList.add('disclaimer');
+  disclaimer.innerHTML =
+    'All images were taken from different pages. The images belong to the restaurants they were taken from and were only taken for educational purposes';
+
+  footer.appendChild(disclaimer);
+
+  socialContainer = document.createElement('div');
+  socialContainer.classList.add(
+    'social-container',
+    'd-flex',
+    'justify-content-between'
+  );
+
+  const linkedin = document.createElement('a');
+  linkedin.classList.add('social-link');
+  linkedin.setAttribute('href', 'https://www.linkedin.com/in/lmaldonadoch/');
+  const linkedinIcon = document.createElement('i');
+  linkedinIcon.classList.add('fab fa-linkedin-in');
+
+  Home.homeRender();
 }
 
 render();
