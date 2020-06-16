@@ -61,26 +61,26 @@ function render() {
   content.appendChild(imageDiv);
 
   const footer = document.createElement('footer');
-  footer.classList.add('w-100', 'd-flex', 'bg-success');
+  footer.classList.add(
+    'w-100',
+    'd-flex',
+    'bg-success',
+    'justify-content-between',
+    'align-items-center'
+  );
 
   const imageDivFooter = document.createElement('div');
-  imageDivFooter.classList.add(
-    'd-flex',
-    'w-100',
-    'justify-content-center',
-    'logo-container',
-    'my-3'
-  );
+  imageDivFooter.classList.add('logo-container');
   footer.appendChild(imageDivFooter);
 
   const disclaimer = document.createElement('p');
-  disclaimer.classList.add('disclaimer');
+  disclaimer.classList.add('disclaimer', 'text-center', 'text-light');
   disclaimer.innerHTML =
-    'All images were taken from different pages. The images belong to the restaurants they were taken from and were only taken for educational purposes';
+    'All images come from different pages; they belong to the restaurants. The images are for educational purposes only.';
 
   footer.appendChild(disclaimer);
 
-  socialContainer = document.createElement('div');
+  const socialContainer = document.createElement('div');
   socialContainer.classList.add(
     'social-container',
     'd-flex',
@@ -91,7 +91,29 @@ function render() {
   linkedin.classList.add('social-link');
   linkedin.setAttribute('href', 'https://www.linkedin.com/in/lmaldonadoch/');
   const linkedinIcon = document.createElement('i');
-  linkedinIcon.classList.add('fab fa-linkedin-in');
+  linkedinIcon.classList.add('fab', 'fa-linkedin-in');
+  linkedin.appendChild(linkedinIcon);
+
+  const github = document.createElement('a');
+  github.classList.add('social-link');
+  github.setAttribute('href', 'https://github.com/lmaldonadoch');
+  const githubIcon = document.createElement('i');
+  githubIcon.classList.add('fab', 'fa-github-square');
+  github.appendChild(githubIcon);
+
+  const twitter = document.createElement('a');
+  twitter.classList.add('social-link');
+  twitter.setAttribute('href', 'https://twitter.com/LuisAngelMCh');
+  const twitterIcon = document.createElement('i');
+  twitterIcon.classList.add('fab', 'fa-twitter-square');
+  twitter.appendChild(twitterIcon);
+
+  socialContainer.append(linkedin, github, twitter);
+
+  footer.appendChild(socialContainer);
+
+  console.log(document.body);
+  document.body.appendChild(footer);
 
   Home.homeRender();
 }

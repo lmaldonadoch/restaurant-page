@@ -11,11 +11,15 @@ a,
   font-family: 'Bellota' !important;
 }
 
+.nav-link:hover {
+  cursor: pointer;
+}
+
 .content {
   background: url('../assets/images/background.jpg') no-repeat center center;
   background-size: cover;
   height: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
 }
 
 .container,
@@ -69,3 +73,43 @@ i {
 .card-img-top {
   height: 200px;
 }
+
+footer {
+  height: 50px !important;
+  margin-bottom: 0;
+}
+
+footer .logo-container {
+  height: 50px;
+  width: 150px;
+  background-size: contain;
+}
+
+footer .disclaimer {
+  width: 50%;
+  max-height: 100%;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.social-container {
+  width: 150px;
+  font-size: 2rem;
+  padding-right: 20px;
+}
+
+a {
+  color: #fff;
+}
+
+/* a .fa-linkedin-in {
+  color: #0e76a8;
+}
+
+a .fa-github-square {
+  color: #24292e;
+}
+
+a .fa-twitter-square {
+  color: #00acee;
+} */
