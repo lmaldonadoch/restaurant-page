@@ -1,13 +1,8 @@
-import _ from 'lodash';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import Home from './pages/home';
 import Menu from './pages/menu';
 import Contact from './pages/contact';
-import '@fortawesome/fontawesome-free/js/fontawesome';
-import '@fortawesome/fontawesome-free/js/solid';
-import '@fortawesome/fontawesome-free/js/regular';
-import '@fortawesome/fontawesome-free/js/brands';
 
 function render() {
   const content = document.getElementById('content');
@@ -56,7 +51,7 @@ function render() {
     'w-100',
     'justify-content-center',
     'logo-container',
-    'my-3'
+    'my-3',
   );
   content.appendChild(imageDiv);
 
@@ -66,7 +61,7 @@ function render() {
     'd-flex',
     'bg-success',
     'justify-content-between',
-    'align-items-center'
+    'align-items-center',
   );
 
   const imageDivFooter = document.createElement('div');
@@ -75,8 +70,7 @@ function render() {
 
   const disclaimer = document.createElement('p');
   disclaimer.classList.add('disclaimer', 'text-center', 'text-light');
-  disclaimer.innerHTML =
-    'All images come from different pages; they belong to the restaurants. The images are for educational purposes only.';
+  disclaimer.innerHTML = 'All images come from different pages; they belong to the restaurants. The images are for educational purposes only.';
 
   footer.appendChild(disclaimer);
 
@@ -84,7 +78,7 @@ function render() {
   socialContainer.classList.add(
     'social-container',
     'd-flex',
-    'justify-content-between'
+    'justify-content-between',
   );
 
   const linkedin = document.createElement('a');
@@ -112,7 +106,6 @@ function render() {
 
   footer.appendChild(socialContainer);
 
-  console.log(document.body);
   document.body.appendChild(footer);
 
   Home.homeRender();

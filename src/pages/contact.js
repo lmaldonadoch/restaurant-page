@@ -22,7 +22,7 @@ const Contact = (() => {
       'flex-column',
       'justify-content-center',
       'home-description',
-      'contact-details'
+      'contact-details',
     );
 
     const phoneContainer = document.createElement('div');

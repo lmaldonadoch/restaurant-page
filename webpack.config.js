@@ -10,9 +10,8 @@ module.exports = {
     contact: './src/pages/contact.js',
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Restaurant Page',
     }),
   ],
   output: {

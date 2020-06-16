@@ -1,16 +1,3 @@
-@font-face {
-  font-family: 'Bellota';
-  src: url('./Bellota-Regular.ttf') format('ttf'),
-    url('./Bellota-Bold.ttf') format('ttf');
-  font-weight: 600;
-  font-style: normal;
-}
-
-a,
-.home-description {
-  font-family: 'Bellota' !important;
-}
-
 .nav-link:hover {
   cursor: pointer;
 }
