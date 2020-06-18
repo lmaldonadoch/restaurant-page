@@ -1,0 +1,102 @@
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.content {
+  background: url('../assets/images/background.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  min-height: calc(100vh - 50px);
+}
+
+.container,
+.container-fluid {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.logo-container {
+  background: url('../assets/images/logo.png') no-repeat center center;
+  height: 100px;
+  width: 200px;
+}
+
+.active {
+  background: rgb(0, 114, 0) !important;
+}
+
+.home-description {
+  font-size: 1.3rem;
+  border: rgb(41, 168, 71) 5px solid;
+  background: rgba(41, 168, 71, 0.7);
+  color: #fff;
+  margin: 75px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 760px;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.contact-details {
+  min-width: 350px;
+  width: 90%;
+}
+
+i {
+  margin-right: 20px;
+}
+
+.contact-paragraph {
+  margin-left: 25px;
+}
+
+.map {
+  min-width: 350px;
+  width: 50vw;
+  max-width: 1200px;
+}
+
+.card-img-top {
+  height: 200px;
+}
+
+footer {
+  height: 50px !important;
+  margin-bottom: 0;
+}
+
+footer .logo-container {
+  height: 50px;
+  width: 150px;
+  background-size: contain;
+}
+
+footer .disclaimer {
+  width: 50%;
+  max-height: 100%;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.social-container {
+  width: 150px;
+  font-size: 2rem;
+  padding-right: 20px;
+}
+
+a {
+  color: #fff;
+}
+
+/* a .fa-linkedin-in {
+  color: #0e76a8;
+}
+
+a .fa-github-square {
+  color: #24292e;
+}
+
+a .fa-twitter-square {
+  color: #00acee;
+} */
