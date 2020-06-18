@@ -1,18 +1,19 @@
 {
   "name": "restaurant-page",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "SushiRoyal website, for the sushi lovers!",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --watch --open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lmaldonadoch/restaurant-page.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Luis Angel Maldonado",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lmaldonadoch/restaurant-page/issues"

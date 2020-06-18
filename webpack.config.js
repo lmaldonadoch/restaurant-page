@@ -8,11 +8,6 @@ module.exports = {
     menu: './src/pages/menu.js',
     contact: './src/pages/contact.js',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Restaurant Page',
-    }),
-  ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
